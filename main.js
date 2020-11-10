@@ -25,6 +25,18 @@ navbarMenu.addEventListener('click',(event)=>{
     if(link == null){
         return;
     }
-    const scrollTo = document.querySelector(link);
+    scrollIntoView(link);
+});
+
+
+// Handle click on "contact me" button on home
+const contactMeBtn = document.querySelector('.home__contact');
+
+contactMeBtn.addEventListener('click',()=>{
+    scrollIntoView('#contact');
+});
+
+function scrollIntoView(selector){
+    const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth"});
-})
+}
