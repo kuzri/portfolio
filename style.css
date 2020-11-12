@@ -285,7 +285,7 @@ p {
   border: 1px solid var(--color-dark-grey);
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
-  padding: 8px 48px;
+  padding: 8px 24px 8px 48px;
 }
 
 .category__btn.active,
@@ -400,8 +400,28 @@ p {
   transition: all var(--animation-duration) ease-in;
 }
 
-/* For below 768px screen width */
+/* Scroll */
+.arrow-up {
+  position: fixed;
+  color: var(--color-white);
+  background-color: var(--color-pink);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+  bottom: 50px;
+  right: 50px;
+  opacity: 0;
+  transition: all vaR(--animation-duration) ease-in;
+  pointer-events: none;
+}
 
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* For below 768px screen width */
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
     display: block;
