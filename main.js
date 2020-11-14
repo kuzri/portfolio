@@ -17,20 +17,27 @@ if(window.scrollY > navbarheight){
 // Handle scrolling when tapping on the navbar menu
 
 const navbarMenu = document.querySelector('.navbar__menu');
-
 navbarMenu.addEventListener('click',(event)=>{
     const target = event.target;
     const link = target.dataset.link;
     if(link == null){
         return;
     }
+    navbarMenu.classList.add('open');
+    console.log(navbarMenu);
     scrollIntoView(link);
 });
+
+    // Navbar toggle button for small screen
+    const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+    navbarToggleBtn.addEventListener('click',()=>{
+        navbarMenu.classList.toggle('open');
+        console.log(navbarMenu.classList);
+    });
 
 
 // Handle click on "contact me" button on home
 const contactMeBtn = document.querySelector('.home__contact');
-
 contactMeBtn.addEventListener('click',()=>{
     scrollIntoView('#contact');
 });
