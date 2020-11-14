@@ -432,7 +432,21 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+
+    /* Size */
+    --size-border-radius: 4px;
+  }
+
   .navbar__toggle-btn {
+    top: 16px;
+    right: 16px;
     display: block;
   }
   #navbar {
@@ -443,26 +457,47 @@ p {
   #navbar.navbar--dark {
     padding: 16px;
   }
+
   .navbar__menu {
     flex-direction: column;
     text-align: center;
     width: 100%;
     display: block;
   }
-  .navbar__menu.open {
+
+  .navbar__menu.close {
     display: none;
   }
 
   .about__majors {
     flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 0px;
   }
   .major {
     margin-bottom: 38px;
   }
+
   .skillset {
     flex-direction: column;
   }
+  .category__btn {
+    display: block;
+    margin: 4px auto;
+    padding: 4px 12px 4px 36px;
+  }
   .project {
     flex-grow: 1;
+  }
+  .section {
+    padding: 56px 0px 0px 0px;
+  }
+
+  .arrow-up {
+    right: 16px;
+    bottom: 16px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
   }
 } ;

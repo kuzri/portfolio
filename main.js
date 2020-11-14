@@ -23,7 +23,7 @@ navbarMenu.addEventListener('click',(event)=>{
     if(link == null){
         return;
     }
-    navbarMenu.classList.add('open');
+    navbarMenu.classList.add('close');
     console.log(navbarMenu);
     scrollIntoView(link);
 });
@@ -31,7 +31,7 @@ navbarMenu.addEventListener('click',(event)=>{
     // Navbar toggle button for small screen
     const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
     navbarToggleBtn.addEventListener('click',()=>{
-        navbarMenu.classList.toggle('open');
+        navbarMenu.classList.toggle('close');
         console.log(navbarMenu.classList);
     });
 
