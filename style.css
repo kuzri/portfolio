@@ -462,11 +462,11 @@ p {
     flex-direction: column;
     text-align: center;
     width: 100%;
-    display: block;
+    display: none;
   }
 
-  .navbar__menu.close {
-    display: none;
+  .navbar__menu.open {
+    display: block;
   }
 
   .about__majors {
