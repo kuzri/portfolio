@@ -117,6 +117,7 @@ p {
   transition: all var(--animation-duration) ease-in;
   z-index: 1;
 }
+
 #navbar.navbar--dark {
   background-color: var(--color-pink);
   padding: 4px;
@@ -215,6 +216,7 @@ p {
   color: var(--color-dark-pink);
   transform: rotate(-30deg) scale(1.1);
 }
+
 .major__icon i {
   transition: all var(--animation-duration) ease;
 }
@@ -224,6 +226,7 @@ p {
 #skills {
   background-color: var(--color-yellow);
 }
+
 .skill {
   margin-bottom: 30px;
 }
@@ -255,6 +258,7 @@ p {
   height: 3px;
   background-color: var(--color-grey);
 }
+
 .skillset__right {
   flex-basis: 40%;
 }
@@ -400,7 +404,7 @@ p {
 
 .contact__links {
   font-size: var(--font-large);
-  margin: 24px 0px;
+  margin: 0px auto;
 }
 
 .contact__links i:hover {
@@ -449,11 +453,13 @@ p {
     right: 16px;
     display: block;
   }
+
   #navbar {
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--color-pink);
   }
+
   #navbar.navbar--dark {
     padding: 16px;
   }
@@ -474,6 +480,7 @@ p {
     margin-top: 20px;
     margin-bottom: 0px;
   }
+
   .major {
     margin-bottom: 38px;
   }
@@ -481,14 +488,17 @@ p {
   .skillset {
     flex-direction: column;
   }
+
   .category__btn {
     display: block;
     margin: 4px auto;
     padding: 4px 12px 4px 36px;
   }
+
   .project {
     flex-grow: 1;
   }
+
   .section {
     padding: 56px 0px 0px 0px;
   }
@@ -500,4 +510,6 @@ p {
     height: 50px;
     font-size: 30px;
   }
-} ;
+}
+
+;
