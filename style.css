@@ -350,6 +350,11 @@ p {
   max-height: 100%;
 }
 
+.project__img__modal {
+  max-width: 50%;
+  max-height: 50%;
+}
+
 .project__description {
   position: absolute;
   display: flex;
@@ -425,7 +430,7 @@ p {
   bottom: 50px;
   right: 50px;
   opacity: 0;
-  transition: all vaR(--animation-duration) ease-in;
+  transition: all var(--animation-duration) ease-in;
   pointer-events: none;
 }
 
@@ -433,6 +438,45 @@ p {
   opacity: 1;
   pointer-events: auto;
 }
+
+
+/* modal option - 2021.10.06 update*/
+
+.modal {
+  display: none;
+  height: 80%;
+  width: 50%;
+  padding: 20px 60px;
+  background-color: #ffffff;
+  border: 1px solid #888;
+  border-radius: 3px;
+  opacity: 0.95;
+}
+
+.modal .modal_close_btn {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+}
+
+.modal .modal_close_btn:hover {
+  color: var(--color-light-white);
+  background-color: var(--color-dark-pink);
+  transition: all var(--animation-duration) ease-in;
+}
+
+.link {
+  margin-top: 10px;
+  box-sizing: border-box;
+  color: black;
+}
+
+.link:hover {
+  color: var(--color-pink);
+}
+
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {

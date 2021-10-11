@@ -183,6 +183,8 @@
   <h3>
     자바 스크립트를 본격적으로 학습한 이후의 프로젝트들 중 github에 업로드한 프로젝트들입니다.<br/>
     소규모 프로젝트가 완성될 때마다 지속적으로 업로드 될 예정입니다.
+    ※현재 modal부분이 하드코딩으로 되어있으나 db연동형식으로 변경될 예정입니다.※
+    <!-- modal의 text도 예뻐보이는 형식이 있으면 변경할 것-->
   </h3>
   
 <div class="work__categories">
@@ -200,47 +202,173 @@
 </div>
 </a>
 
-<a href="https://github.com/kuzri/carrot_game" class="project"
+<div class="project" id="carrot_game"
 target="blank"  data-type="Javascript"><img src="imgs/pjgame.png" alt="project__portfolio" class="project__img">
 <div class="project__description">
 <h3>github url</h3>
 <span>carrot_game</span>
 </div>
-</a>
+</div>
 
-<a href="https://github.com/kuzri/chase_coordinate" class="project"
+<div class="project" id="chase_coordinate"
 target="blank"  data-type="Javascript"><img src="imgs/pjcoordnate.png" alt="project__portfolio" class="project__img">
 <div class="project__description">
 <h3>github url</h3>
 <span>coordinates</span>
 </div>
-</a>
+</div>
 
-<a href="https://github.com/kuzri/scroll_to_rabbit" class="project"
+<div class="project" id="scroll_to_rabbit"
 target="blank"  data-type="Javascript"><img src="imgs/pjscrolling.png" alt="project__portfolio" class="project__img">
 <div class="project__description">
 <h3>github url</h3>
 <span>find_rabbits</span>
 </div>
-</a>
+</div>
 
-<a href="https://github.com/kuzri/habit-tracker" class="project"
+<div class="project" id="habit-tracker"
 target="blank"  data-type="React"><img src="imgs/pjhabit-tracker.png" alt="project__portfolio" class="project__img">
 <div class="project__description">
 <h3>github url</h3>
 <span>habit-tracker</span>
 </div>
-</a>
+</div>
 
-<a href="https://github.com/kuzri/simple_youtube" class="project"
+<div class="project" id="yotube_project"
 target="blank"  data-type="React"><img src="imgs/pjyoutube.png" alt="project__portfolio" class="project__img">
 <div class="project__description">
 <h3>github url</h3>
 <span>youtube_clone</span>
 </div>
-</a>
+</div>
+<section id="modal">
+  <div class="modal" id="carrot_game_modal">
+    개발환경 : <br/>
+    OS : Windows 10<br/>
+    Editor : VSCode<br/>
+    
+    테스트환경 : <br/>
+    node: 14.15.1 <br/>
+    chrome<br/><br/>
+
+    간단 설명:<br/>
+    vanila jascript로 간단한 게임을 만들었습니다.<br/>
+    좌표기능과 onclick 이벤트를 이용해 당근은 클릭하여 재배하는 게임으로 벌레를 클릭하면 게임오버가 됩니다.
+    <br/><br/>
+    
+    
+    <img src="imgs/pjgame.png" alt="pjgame" class="project__img__modal">
+    <br/>
+    <a class="link" href="https://github.com/kuzri/carrot_game">github link</a>
+    
+      <a class="modal_close_btn">Ⅹ</a>
+    </div>
+    <div class="modal" id="chase_coordinate_modal">
+      개발환경 : <br/>
+      OS : Windows 10<br/>
+      Editor : VSCode<br/><br/>
+      
+      테스트환경 : <br/>
+      node: 14.15.1 <br/>
+      chrome<br/><br/>
+
+      간단 설명:<br/>
+      es6의 js를 공부하면서 만든 실험용 프로젝트입니다.<br/>
+      innertext 값에 좌표를 넣어주고 event를 통해 좌표가 움직일때마다 값이 변합니다.<br/>
+       알고보면 간단하지만 모르고 보면 신기합니다.<br/>
+
+      <br/><br/>
+      
+      <img src="imgs/pjcoordnate.png" alt="pjcoordnate" class="project__img__modal">
+      <br/>
+      <a class="link" href="https://github.com/kuzri/chase_coordinate">github link</a>
+      
+        <a class="modal_close_btn">Ⅹ</a>
+      </div>
+      <div class="modal" id="scroll_to_rabbit_modal">
+        개발환경 : <br/>
+        OS : Windows 10<br/>
+        Editor : VSCode<br/><br/>
+        
+        테스트환경 : <br/>
+        node: 14.15.1 <br/>
+        chrome<br/><br/>
+
+        간단 설명 : <br/>
+        es6의 js를 공부하면서 만든 실험용 프로젝트입니다.<br/>
+        버튼에 click event를 넣어줘서 토끼가 있는 좌표로 스크롤하는 간단한 프로젝트입니다.<br/>
+
+        <br/><br/>
+        
+        <img src="imgs/pjscrolling.png" alt="pjscrolling" class="project__img__modal">
+        <br/>
+        <a class="link" href="https://github.com/kuzri/scroll_to_rabbit">github link</a>
+        
+          <a class="modal_close_btn">Ⅹ</a>
+        </div>
+
+        <div class="modal" id="habit-tracker_modal">
+          개발환경 : <br/>
+          OS : Windows 10<br/>
+          Editor : VSCode<br/>
+          react : 17.0.1<br/><br/>
+          
+          테스트환경 : <br/>
+          node: 14.15.1 <br/>
+          chrome<br/><br/>
+
+          간단 설명 :<br/>
+          첫 리액트 실습프로젝트입니다.<br/>
+          리액트 작동 과정과 jsx에 대한 이해과정을 알기 위해 간단한 기능을 하는 프로젝트 입니다.<br/>
+          component의 추가, 삭제와 전체갯수를 통계하고, 이를 렌더링하는 프로젝트입니다.<br/>
+          state와 props등을 처음 사용했으며, class형식으로 제작되었습니다.
+          <br/><br/>
+          
+          <img src="imgs/pjhabit-tracker.png" alt="pjhabit-tracker" class="project__img__modal">
+          <br/>
+          <a class="link" href="https://github.com/kuzri/habit-tracker">github link</a>
+          
+            <a class="modal_close_btn">Ⅹ</a>
+          </div>
+
+            <div class="modal" id="habit-tracker_modal">
+              개발환경 : <br/>
+              OS : Windows 10<br/>
+              Editor : VSCode<br/>
+              react : 17.0.1<br/>
+              axios : 0.21.1<br/><br/>
+              
+              테스트환경 : <br/>
+              node: 14.15.1 <br/>
+              chrome<br/><br/>
+              
+              <img src="imgs/pjyoutube.png" alt="pjyoutube" class="project__img__modal">
+              <br/>
+              <a class="link" href="https://github.com/kuzri/simple_youtube">github link</a>
+              
+                <a class="modal_close_btn">Ⅹ</a>
+              </div>
+<div class="modal" id="yotube_project_modal">
+개발환경 : <br/>
+OS : Windows 10<br/>
+Editor : VSCode<br/>
+react : 17.0.1<br/>
+axios : 0.21.1<br/><br/>
+    
+테스트환경 : <br/>
+node: 14.15.1 <br/>
+chrome<br/><br/>
+
+<img src="imgs/pjyoutube.png" alt="project__portfolio" class="project__img__modal">
+<br/>
+<a class="link" href="https://github.com/kuzri/simple_youtube">github link</a>
+
+  <a class="modal_close_btn">Ⅹ</a>
+
 
 </div>
+</div>
+</section>
 </div>
   </section>
   <!-- contact -->
